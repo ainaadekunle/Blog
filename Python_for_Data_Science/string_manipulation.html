@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>ints_floats_strings</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>string_manipulaton</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11771,19 +11771,21 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="String-Manipulations">String Manipulations<a class="anchor-link" href="#String-Manipulations">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to create and give a name to an integer?</span>
-<span class="n">my_grade</span> <span class="o">=</span> <span class="mi">95</span>
-
-<span class="c1"># How to create and give a name to a floating-point number?</span>
-<span class="n">my_account_balance</span> <span class="o">=</span> <span class="mf">10200.58</span>
-
-<span class="c1"># How to create and give a name to a string?</span>
-<span class="n">my_favourite_language</span> <span class="o">=</span> <span class="s1">&#39;python&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a string and name it string</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
 </pre></div>
 
 </div>
@@ -11793,13 +11795,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to print the values using the names?</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_grade</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_account_balance</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_favourite_language</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to access characters in a string?</span>
+<span class="c1">#  use [index] to access characters in a string</span>
+<span class="c1">#  counting starts from 0 in python</span>
+<span class="n">first_character</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Print first character</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first character in python is: &#39;</span><span class="p">,</span> <span class="n">first_character</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11816,9 +11820,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>95
-10200.58
-python
+<pre>The first character in python is:  P
 </pre>
 </div>
 </div>
@@ -11829,13 +11831,13 @@ python
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to print the values directly?</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">95</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mf">10200.58</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># If counting from behind,  start counting from -1</span>
+<span class="n">last_character</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># Print last character</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The last character in python is: &#39;</span><span class="p">,</span> <span class="n">last_character</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11852,9 +11854,7 @@ python
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>95
-10200.58
-python
+<pre>The last character in python is:  n
 </pre>
 </div>
 </div>
@@ -11865,13 +11865,13 @@ python
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to print more informative statements?</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My grade is&#39;</span><span class="p">,</span>  <span class="n">my_grade</span><span class="p">,</span> <span class="s1">&#39;percent&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My account balance is&#39;</span><span class="p">,</span> <span class="n">my_account_balance</span><span class="p">,</span> <span class="s1">&#39;dollars&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_favourite_language</span><span class="p">,</span> <span class="s1">&#39;is awesome! It is my favourite programming languge&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to to substring the characters from a string</span>
+<span class="c1">#  use : to substring the characters from position 1 to position 5 (not included)</span>
+<span class="c1"># Print first character</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Characters 1 to 4 in python is: &#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -11888,9 +11888,7 @@ python
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>My grade is 95 percent
-My account balance is 10200.58 dollars
-python is awesome! It is my favourite programming languge
+<pre>Characters 1 to 4 in python is:  ytho
 </pre>
 </div>
 </div>
@@ -11901,13 +11899,12 @@ python is awesome! It is my favourite programming languge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to print the data types (or class) directly?</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">95</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10200.58</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to find the lenght (number of characters) of a string?</span>
+<span class="c1">#  use len() to return the length of a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">),</span> <span class="s1">&#39;characters in&#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11924,9 +11921,7 @@ python is awesome! It is my favourite programming languge
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;str&#39;&gt;
+<pre>There are 6 characters in Python
 </pre>
 </div>
 </div>
@@ -11937,13 +11932,12 @@ python is awesome! It is my favourite programming languge
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to print the data types (or class) using the names?</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">my_grade</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span> <span class="n">my_account_balance</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">my_favourite_language</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to change all characters to lower case?</span>
+<span class="c1">#  use .lower() to put all characters in lower case </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -11960,9 +11954,140 @@ python is awesome! It is my favourite programming languge
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;str&#39;&gt;
+<pre>python
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to change all characters to upper case?</span>
+<span class="c1">#  use .upper() to put all characters in upper case </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>PYTHON
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to join strings together?</span>
+<span class="c1">#  use + to join (or concatenate) strings together</span>
+<span class="n">string</span> <span class="o">=</span> <span class="n">string</span> <span class="o">+</span> <span class="s1">&#39; is awesome!&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python is awesome!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to replace part or the whole string?</span>
+<span class="c1">#  use .replace() to replace part a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;awesome&#39;</span><span class="p">,</span> <span class="s1">&#39;amazing&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python is amazing!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># How to check if a string starts with some characters</span>
+<span class="c1"># use .startswith() to check if a string starts with some characters</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Py&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
 </pre>
 </div>
 </div>
