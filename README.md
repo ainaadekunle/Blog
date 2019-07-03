@@ -1,2 +1,2 @@
 # Blog
-Repository for my blog on python and data science.
+Repository for my blog on Python and Data Science.
