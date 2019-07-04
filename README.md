@@ -1,2 +1,2 @@
 # Blog
-Repository for my blog on Python and Data Science.
+Repository for my blog on Data Insight @ datainsightonline.com
