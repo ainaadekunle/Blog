@@ -1,2 +1,2 @@
 # Blog
-Repository for my blog on Data Insight @ datainsightonline.com
+Repository for Data Insight Blog on datainsightonline.com/blog
